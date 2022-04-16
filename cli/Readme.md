@@ -19,6 +19,9 @@ CLI are command to be used in a Linux distribution.
 git clone <url>...
 ```
 
+### Add exec right to shell script
+chmod 750 cli/event_*.sh
+
 <!--
 ### Prepare your virtual env
 
