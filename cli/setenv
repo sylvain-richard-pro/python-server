@@ -1,0 +1,2 @@
+#set with your appropriate value
+URL_PYTHON_SERVER="http://127.0.0.1:5000"

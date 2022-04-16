@@ -1,0 +1,3 @@
+#set your Mongodb connection string
+mongodb_url: "localhost:27017"
+

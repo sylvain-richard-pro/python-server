@@ -1,0 +1,10 @@
+#fichier test*
+test*
+#les virtualenv
+*/venv/*
+#les workspace visualcode
+*.code-workspace
+*/.vscode/*
+*/__pycache__/*
+.DS_Store
+
