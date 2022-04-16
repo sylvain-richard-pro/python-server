@@ -24,5 +24,5 @@ B --> |pymongo| C{Mongodb}
 All components use the network to communicate, so they can be installed on different servers.
 
 You need to configure:
-    - the URL of the pythonServer service for CLI.
-    - the Mongodb URL for pythonServer.
+- the URL of the pythonServer service for CLI.
+- the Mongodb URL for pythonServer.
