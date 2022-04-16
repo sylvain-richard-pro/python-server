@@ -1,7 +1,7 @@
 # CLI to manage events
 
 ## Context
-Events are managed by the Python server
+Events are managed by the ["Python server" (python WebAPI) ](https://github.com/sylvain-richard-pro/python-server/tree/master/flaskServer)
 
 CLI are command to be used in a Linux distribution.
 
