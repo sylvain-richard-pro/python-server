@@ -180,7 +180,7 @@ python
 
 ## CLI
 
-You should use CLI to test events feature [CLI Documentation](https://markdownlivepreview.com/).
+You should use CLI to test events feature [CLI Documentation](https://github.com/sylvain-richard-pro/python-server/tree/master/cli).
 
 
 <br />
