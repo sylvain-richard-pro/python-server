@@ -49,7 +49,7 @@ Update the YAML config file config.yml
 ```bash
 cat config.yml 
 #set your Mongodb connection string
-mongodb_url: "localhost:27017"
+mongodb_connection_string: "localhost:27017"
 ```
 
 ### Start the python server
