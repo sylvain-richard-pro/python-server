@@ -24,5 +24,7 @@ B --> |pymongo| C{Mongodb}
 All components use the network to communicate, so they can be installed on different servers.
 
 You need to configure:
-- the __URL__ of the pythonServer service for CLI.
+- the __URL__ of the pythonServer service for CLI.    
+  > in file _cli/setenv_
 - the Mongodb __connection string__ for pythonServer.
+  > in file _flaskServer/config.yml_
