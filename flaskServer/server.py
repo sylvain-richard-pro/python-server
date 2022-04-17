@@ -16,9 +16,9 @@ with open("config.yml", "r") as ymlfile:
 #client = MongoClient(port=27017)
 try:
     #get cfg
-    CONN_STR_MONGODB = cfg["mongodb_connection_string"]
+    conn_str_mongodb = cfg["mongodb_connection_string"]
     #init conn
-    client = MongoClient(host=CONN_STR_MONGODB, serverSelectionTimeoutMS = 3000)
+    client = MongoClient(host = conn_str_mongodb, serverSelectionTimeoutMS = 3000)
     print(client)
 except Exception as err:
     print(f"Unexpected {err=}, {type(err)=}")
