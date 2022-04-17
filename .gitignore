@@ -2,6 +2,7 @@
 test*
 #les virtualenv
 */venv/*
+bandit-env
 #les workspace visualcode
 *.code-workspace
 */.vscode/*
