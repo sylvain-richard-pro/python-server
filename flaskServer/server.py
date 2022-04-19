@@ -28,7 +28,7 @@ db = client.dbEvent
 
 
 # main.py
-from flask import Flask, request, abort
+from flask import Flask, request, abort, Response
 
 # Create the flask app
 app = Flask(__name__)
@@ -68,13 +68,23 @@ body.request
         #Print to the console the ObjectID of the new document
         print('-I- Event Created "_id" : ObjectId("{0}")'.format(result.inserted_id))
 
-        return {
+        body_response = {
             'message': 'This endpoint should create an event in db',
             'method': request.method,
             'body': request.json,
             '_id': str(result.inserted_id)
-
         }
+
+
+        return Response(repr(body_response)+"\n", status=201, mimetype='application/json')
+
+#        return {
+#            'message': 'This endpoint should create an event in db',
+#            'method': request.method,
+#            'body': request.json,
+#            '_id': str(result.inserted_id)
+
+#        }
 
 
 
