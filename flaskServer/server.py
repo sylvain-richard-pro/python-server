@@ -75,16 +75,14 @@ body.request
             '_id': str(result.inserted_id)
         }
 
+ #       return Response(json.dumps(body_response)+"\n", status=201, mimetype='application/json')
 
-        return Response(repr(body_response)+"\n", status=201, mimetype='application/json')
-
-#        return {
-#            'message': 'This endpoint should create an event in db',
-#            'method': request.method,
-#            'body': request.json,
-#            '_id': str(result.inserted_id)
-
-#        }
+        return {
+            'message': 'This endpoint should create an event in db',
+            'method': request.method,
+            'body': request.json,
+            '_id': str(result.inserted_id)
+        }, 201, {'ContentType':'application/json'}
 
 
 
@@ -114,7 +112,8 @@ body.response
             'message': 'This endpoint list all events in db',
             'method': request.method,
             'array_events': repr(res)
-        }
+        }, 200, {'ContentType':'application/json'}
+
 
 
 
@@ -164,7 +163,7 @@ body.request
                         'method': request.method,
                         'body': request.json,
                         'result': 'all events are removed'
-                    }
+                    }, 200, {'ContentType':'application/json'}
 
             except KeyError:
                 # continue with 'start_epoch_array'
@@ -201,8 +200,5 @@ body.request
             'body': request.json,
             'start_epoch_array_not_deleted': repr(start_epoch_array_not_deleted),
             'start_epoch_array_deleted': repr(start_epoch_array_deleted)            
-        }
-
-
-
+        }, 200, {'ContentType':'application/json'}
 
