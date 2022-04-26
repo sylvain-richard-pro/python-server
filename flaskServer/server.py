@@ -68,12 +68,12 @@ body.request
         #Print to the console the ObjectID of the new document
         print('-I- Event Created "_id" : ObjectId("{0}")'.format(result.inserted_id))
 
-        body_response = {
-            'message': 'This endpoint should create an event in db',
-            'method': request.method,
-            'body': request.json,
-            '_id': str(result.inserted_id)
-        }
+        # body_response = {
+        #     'message': 'This endpoint should create an event in db',
+        #     'method': request.method,
+        #     'body': request.json,
+        #     '_id': str(result.inserted_id)
+        # }
 
  #       return Response(json.dumps(body_response)+"\n", status=201, mimetype='application/json')
 
